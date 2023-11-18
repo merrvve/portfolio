@@ -102,9 +102,9 @@
             <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
                 <div onclick="scrolltoElement('projects')" id="projectsMenu" class="flex flex-col mb-5 lg:items-start items-center border-2 rounded-lg p-6 hover:bg-teal-100 hover:-translate-y-3 duration-300 cursor-pointer hover:text-gray-800 active:scale-105">
                     <div class="flex -space-x-2 mb-5">
-                        <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="/img/ofro.jpg" alt="Ofro">
-                        <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="/img/marsev.jpg" alt="Marsev">
-                        <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="/img/presentai-logo.jpg" alt="PresentAI">
+                        <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="img/ofro.jpg" alt="Ofro">
+                        <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="img/marsev.jpg" alt="Marsev">
+                        <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="img/presentai-logo.jpg" alt="PresentAI">
                         <div class="hs-dropdown relative inline-flex [--placement:top-left]">
                             <button class="bg-indigo-100 inline-flex items-center justify-center h-[2.875rem] w-[2.875rem] rounded-full  shadow-sm align-middle hover:bg-teal-100 text-sm dark:text-black  active:scale-110 duration-300">
                                 <span class="leading-none"> + </span>
@@ -187,231 +187,242 @@
                 <h1 class="sm:text-3xl text-2xl font-extrabold text-center mb-4">Recent Projects</h1>
             </div>
             <div class="inline-flex rounded-lg shadow-sm mb-6">
-                <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-indigo-500 text-slate-100 shadow-sm hover:bg-gray-50 hover:text-black disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                <button id="tabBtn1" type="button" class="selected tab-button py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 hover:text-black disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
                     Ofro
                 </button>
-                <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                <button id="tabBtn2" type="button" class="tab-button py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
                     Marsev
                 </button>
-                <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                <button id="tabBtn3" type="button" class="tab-button py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
                     PresentAI
                 </button>
             </div>
-            <p class="flex text-left leading-relaxed mx-auto mb-10">
-                <a href="http://www.ofro.com.tr" target="_blank" class="mt-2">
-                    <img class="bg-indigo-100 mr-3 inline-block h-[2.875rem] w-[3.4rem] rounded-full ring-2 ring-white" src="/img/ofro.jpg" alt="Ofro">
-                    <span class="mt-2"> ofro.com.tr</span></a>
-            </p>
-            <p class="flex text-left leading-relaxed mx-auto mb-10">
-                Ofro is an online financial feasibility report genarator tool. It is not just a CRUD web application, but generates reports with graphics based on user inputs.
-            </p>
-            <div class="flex flex-wrap -m-4 text-sm">
-                <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
-                    <h2 class="font-medium title-font tracking-widest mb-4  text-center sm:text-left">TECHSTACK</h2>
-                    <nav class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Angular v15
-                        </a>
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Flask
-                        </a>
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Mongo DB
-                        </a>
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Firebase
-                        </a>
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>HTML
-                        </a>
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Bootstrap
-                        </a>
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Git
-                        </a>
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Google Search
-                        </a>
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Chat-GPT
-                        </a>
-                    </nav>
-                </div>
-                <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
-                    <h2 class="font-medium title-font tracking-widest mb-4 text-sm text-center sm:text-left">FEATURES</h2>
-                    <nav class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Authentication, Authorization (Angular-Fire)
-                        </a>
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Role-based routes (admin, user)
-                        </a>
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Lazily-loaded components
-                        </a>
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Admin and user guards
-                        </a>
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Interactive form
-                        </a>
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Pandas Dataframes (calculations based on an exsiting excel program)
-                        </a>
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Pie charts and line charts with Mathplotlib
-                        </a>
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Output in .html, .pdf, .xlsx and .docx formats
-                        </a>
-                    </nav>
-                </div>
-                <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
-                    <h2 class="font-medium title-font tracking-widest  mb-4 text-sm text-center sm:text-left">HOSTING AND DEPLOY</h2>
-                    <nav class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>VPS with CentOS
-                        </a>
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Served with Nginx
-                        </a>
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Gunicorn for Flask
-                        </a>
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Git for updates
-                        </a>
+            <div class="tab-content transition-opacity duration-500 ease-in-out hidden" id="tab1">
+                <p class="flex text-left leading-relaxed mx-auto mb-10">
+                    <a href="http://www.ofro.com.tr" target="_blank" class="mt-2">
+                        <img class="bg-indigo-100 mr-3 inline-block h-[2.875rem] w-[3.4rem] rounded-full ring-2 ring-white" src="/img/ofro.jpg" alt="Ofro">
+                        <span class="mt-2"> ofro.com.tr</span>
+                    </a>
+                </p>
+                <p class="flex text-left leading-relaxed mx-auto mb-10">
+                    Ofro is an online financial feasibility report genarator tool. It is not just a CRUD web application, but generates reports with graphics based on user inputs.
+                </p>
+                <div class="flex flex-wrap -m-4 text-sm">
+                    <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
+                        <h2 class="font-medium title-font tracking-widest mb-4  text-center sm:text-left">TECHSTACK</h2>
+                        <nav class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Angular v15
+                            </a>
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Flask
+                            </a>
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Mongo DB
+                            </a>
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Firebase
+                            </a>
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>HTML
+                            </a>
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Bootstrap
+                            </a>
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Git
+                            </a>
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Google Search
+                            </a>
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Chat-GPT
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
+                        <h2 class="font-medium title-font tracking-widest mb-4 text-sm text-center sm:text-left">FEATURES</h2>
+                        <nav class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Authentication, Authorization (Angular-Fire)
+                            </a>
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Role-based routes (admin, user)
+                            </a>
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Lazily-loaded components
+                            </a>
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Admin and user guards
+                            </a>
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Interactive form
+                            </a>
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Pandas Dataframes (calculations based on an exsiting excel program)
+                            </a>
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Pie charts and line charts with Mathplotlib
+                            </a>
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Output in .html, .pdf, .xlsx and .docx formats
+                            </a>
+                        </nav>
+                    </div>
+                    <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
+                        <h2 class="font-medium title-font tracking-widest  mb-4 text-sm text-center sm:text-left">HOSTING AND DEPLOY</h2>
+                        <nav class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>VPS with CentOS
+                            </a>
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Served with Nginx
+                            </a>
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Gunicorn for Flask
+                            </a>
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Git for updates
+                            </a>
 
-                    </nav>
-                </div>
-                <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
-                    <h2 class="font-medium title-font tracking-widest  mb-4 text-sm text-center sm:text-left">CHALLENGES</h2>
-                    <nav class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>First time deployment experience to a VPS
-                        </a>
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>Thousand separator directive was confused my mind :)
-                        </a>
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>The time was limited and I didn't write tests.
-                        </a>
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>I have converted an excel program into a web-based program, writing all calculating all functions in python from scratch myself.
-                            The output has 23 main tables, 5 figures and dynamically selected comments. I have enjoyed but with a stress for time limitation.
-                        </a>
-                        <a>
-                            <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
-                                    <path d="M20 6L9 17l-5-5"></path>
-                                </svg>
-                            </span>It works well right now but I need to improve myself about scaling up and database management.
-                        </a>
+                        </nav>
+                    </div>
+                    <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
+                        <h2 class="font-medium title-font tracking-widest  mb-4 text-sm text-center sm:text-left">CHALLENGES</h2>
+                        <nav class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>First time deployment experience to a VPS
+                            </a>
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>Thousand separator directive was confused my mind :)
+                            </a>
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>The time was limited and I didn't write tests.
+                            </a>
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>I have converted an excel program into a web-based program, writing all calculating all functions in python from scratch myself.
+                                The output has 23 main tables, 5 figures and dynamically selected comments. I have enjoyed but with a stress for time limitation.
+                            </a>
+                            <a>
+                                <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+                                        <path d="M20 6L9 17l-5-5"></path>
+                                    </svg>
+                                </span>It works well right now but I need to improve myself about scaling up and database management.
+                            </a>
 
-                    </nav>
+                        </nav>
+                    </div>
                 </div>
             </div>
+            <div class="tab-content transition-opacity duration-500 ease-in-out hidden" id="tab2">
+                2
+            </div>
+            <div class="tab-content transition-opacity duration-500 ease-in-out hidden" id="tab3">
+                3
+            </div>
+            
+
         </div>
     </section>
 
@@ -717,6 +728,34 @@
                 console.error('Element with ID ' + elementId + ' not found.');
             }
         }
+    </script>
+    <script>
+        document.querySelectorAll('.tab-button').forEach(button => {
+            button.addEventListener('click', () => {
+                const tabNumber = button.id.replace('tabBtn', '');
+                showTab(tabNumber);
+            });
+        });
+
+        function showTab(number) {
+            const tabs = document.querySelectorAll('.tab-content');
+
+            tabs.forEach(tab => {
+                tab.style.opacity = '0';
+                setTimeout(() => {
+                    tab.classList.add('hidden');
+                }, 200); // Match the duration of the CSS transition
+            });
+
+            const activeTab = document.getElementById(`tab${number}`);
+            setTimeout(() => {
+                activeTab.classList.remove('hidden');
+                setTimeout(() => activeTab.style.opacity = '1', 50);
+            }, 200);
+        }
+      
+        showTab(1);
+
     </script>
 </body>
 </html>
