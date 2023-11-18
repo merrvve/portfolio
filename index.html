@@ -73,6 +73,7 @@
                         <li>
                             <a onclick="scrolltoElement('footer')" class="cursor-pointer block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contact</a>
                         </li>
+
                     </ul>
                 </div>
 
@@ -100,17 +101,18 @@
 
             <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
                 <div onclick="scrolltoElement('projects')" id="projectsMenu" class="flex flex-col mb-5 lg:items-start items-center border-2 rounded-lg p-6 hover:bg-teal-100 hover:-translate-y-3 duration-300 cursor-pointer hover:text-gray-800 active:scale-105">
-                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5  ring-2">
-                        <svg stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6 " viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="tv">
-                                <path id="Rectangle 2" d="M20 8L20 20L4 20L4 8L20 8Z" />
-                                <path id="Path 3" d="M8 4.08334L12 8.00001L16 4.08334" />
-                            </g>
-                        </svg>
-                        <!--<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                        </svg>-->
+                    <div class="flex -space-x-2 mb-5">
+                        <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="/img/ofro.jpg" alt="Ofro">
+                        <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="/img/marsev.jpg" alt="Marsev">
+                        <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="/img/presentai-logo.jpg" alt="PresentAI">
+                        <div class="hs-dropdown relative inline-flex [--placement:top-left]">
+                            <button class="bg-indigo-100 inline-flex items-center justify-center h-[2.875rem] w-[2.875rem] rounded-full  shadow-sm align-middle hover:bg-teal-100 text-sm dark:text-black  active:scale-110 duration-300">
+                                <span class="leading-none"> + </span>
+                            </button>
+
+                        </div>
                     </div>
+
                     <div class="flex-grow">
                         <h2 class="text-indigo-500 text-lg title-font font-medium mb-3">Recent Projects</h2>
                         <p class="leading-relaxed text-sm">Development steps, used tech-stack, deploy, hosting and challanges are explained.</p>
@@ -185,7 +187,7 @@
                 <h1 class="sm:text-3xl text-2xl font-extrabold text-center mb-4">Recent Projects</h1>
             </div>
             <div class="inline-flex rounded-lg shadow-sm mb-6">
-                <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-indigo-500 text-slate-100 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-indigo-500 text-slate-100 shadow-sm hover:bg-gray-50 hover:text-black disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
                     Ofro
                 </button>
                 <button type="button" class="py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
@@ -195,6 +197,11 @@
                     PresentAI
                 </button>
             </div>
+            <p class="flex text-left leading-relaxed mx-auto mb-10">
+                <a href="http://www.ofro.com.tr" target="_blank" class="mt-2">
+                    <img class="bg-indigo-100 mr-3 inline-block h-[2.875rem] w-[3.4rem] rounded-full ring-2 ring-white" src="/img/ofro.jpg" alt="Ofro">
+                    <span class="mt-2"> ofro.com.tr</span></a>
+            </p>
             <p class="flex text-left leading-relaxed mx-auto mb-10">
                 Ofro is an online financial feasibility report genarator tool. It is not just a CRUD web application, but generates reports with graphics based on user inputs.
             </p>
@@ -417,9 +424,9 @@
             <table class="table-auto w-full text-left whitespace-no-wrap text-sm">
                 <thead>
                     <tr>
-                        <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100  dark:bg-gray-300 rounded-tl rounded-bl">Tech</th>
-                        <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 dark:bg-gray-300">Years of Experience</th>
-                        <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 dark:bg-gray-300">Notes</th>
+                        <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100  dark:bg-slate-900 dark:text-white rounded-tl rounded-bl">Tech</th>
+                        <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 dark:bg-slate-900 dark:text-white">Years of Experience</th>
+                        <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 dark:bg-slate-900 dark:text-white">Notes</th>
                     </tr>
                 </thead>
                 <tbody class="text-center">
