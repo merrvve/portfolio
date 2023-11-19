@@ -38,12 +38,13 @@
                 max-height: 500px; /* Adjust this value based on the content size */
                 display: block;
             }
-    </style>
+			
+   </style>
 </head>
-<body>
+<body class="bg-slate-100">
     <div class="relative">
         <div class="absolute top-0 right-0">
-            <button id="theme-toggle" class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 m-2 hover:bg-teal-100 hover:scale-105 focus:scale-100 duration-300 active:scale-110 cursor-pointer">
+            <button id="theme-toggle" class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 m-2 hover:bg-pink-200 hover:scale-105 focus:scale-100 duration-300 active:scale-110 cursor-pointer">
                 <span>
                     <svg id="theme-toggle-dark-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z" /></svg>
                 </span>
@@ -52,7 +53,7 @@
                 </span>
             </button>
             <div class="relative" id="dropdown-container">
-                <button id="menu-toggle" class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 m-2 hover:bg-teal-100 hover:scale-105 focus:scale-100 duration-300 active:scale-110 cursor-pointer">
+                <button id="menu-toggle" class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 m-2 hover:bg-pink-200 hover:scale-105 focus:scale-100 duration-300 active:scale-110 cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" /></svg>
                 </button>
 
@@ -90,23 +91,26 @@
             <div class="lg:w-1/2 w-screen mb-10 lg:mb-0 rounded-lg py-4">
                 <div class="flex flex-col justify-between h-full">
                     <div>
-                        <h1 class="md:text-7xl text-5xl px-2 md:py-24 font-extrabold leading-lose pt-36">Full Stack Developer <br /></h1>
-                        <h3 class="leading-10 pt-4">Merve Keskin. <br />Based in Istanbul.</h3>
+					<h1 class="md:text-7xl text-5xl px-2 md:py-16 font-extrabold leading-lose pt-36 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
+              Full Stack Developer
+            </h1>
+                        <br />
+                        <h3 class="leading-10 pt-4 ml-2">Merve Keskin. <br />Based in Istanbul.</h3>
                     </div>
                     <div class="flex justify-end mb-5 pt-10 ">
-                        <button onclick="scrolltoElement('footer')" class="w-full mr-2 md:w-auto text-white bg-indigo-500 border-0 py-2 px-8 hover:scale-105 focus:bg-indigo-800 duration-300 rounded text-lg">Contact Me</button>
+                        <button onclick="scrolltoElement('footer')" class="w-full mr-2 md:w-auto text-white bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 border-0 py-2 px-8 hover:scale-105 focus:bg-indigo-800 duration-300 rounded text-lg">Contact Me</button>
                     </div>
                 </div>
             </div>
 
             <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
-                <div onclick="scrolltoElement('projects')" id="projectsMenu" class="flex flex-col mb-5 lg:items-start items-center border-2 rounded-lg p-6 hover:bg-teal-100 hover:-translate-y-3 duration-300 cursor-pointer hover:text-gray-800 active:scale-105">
+                <div onclick="scrolltoElement('projects')" id="projectsMenu" class="flex flex-col mb-5 lg:items-start items-center border-2 border-indigo-400 rounded-lg p-6 hover:bg-blue-100 hover:-translate-y-3 duration-300 cursor-pointer hover:text-gray-800 active:scale-105">
                     <div class="flex -space-x-2 mb-5">
-                        <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="portfolio/img/ofro.jpg" alt="Ofro">
-                        <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="portfolio/img/marsev.jpg" alt="Marsev">
-                        <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="portfolio/img/presentai-logo.jpg" alt="PresentAI">
-                        <div class="hs-dropdown relative inline-flex [--placement:top-left]">
-                            <button class="bg-indigo-100 inline-flex items-center justify-center h-[2.875rem] w-[2.875rem] rounded-full  shadow-sm align-middle hover:bg-teal-100 text-sm dark:text-black  active:scale-110 duration-300">
+                        <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-indigo-400" src="portfolio/img/ofro.jpg" alt="Ofro">
+                        <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-indigo-400" src="portfolio/img/marsev.jpg" alt="Marsev">
+                        <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-indigo-400" src="portfolio/img/presentai-logo.jpg" alt="PresentAI">
+                        <div class="relative inline-flex [--placement:top-left]">
+                            <button class="bg-indigo-100 inline-flex items-center justify-center h-[2.875rem] w-[2.875rem] ring-2 ring-indigo-400 rounded-full  shadow-sm align-middle hover:bg-blue-100 text-sm dark:text-black  active:scale-110 duration-300">
                                 <span class="leading-none"> + </span>
                             </button>
 
@@ -125,18 +129,18 @@
                     </div>
                 </div>
                 <div class="columns-1 md:columns-2 items-center ">
-                    <div class="border-2 rounded-lg p-6 hover:bg-teal-100 hover:-translate-y-3 duration-300 cursor-pointer hover:text-gray-800 active:scale-105">
+                    <div class="border-2 border-indigo-400 rounded-lg p-6 hover:bg-blue-100 hover:-translate-y-3 duration-300 cursor-pointer hover:text-gray-800 active:scale-105">
                         <!--<div class="w-12 h-12 inline-flex items-center justify-center rounded-full ">-->
                         <!--<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
                           <circle cx="12" cy="3" r="1" />
                           <path d="M16 21L12 13M12 13V7M12 13L8 21M12 7L18 9M12 7L6 9" />
                         </svg>-->
                         <div class="flex -space-x-2 mb-5">
-                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular">
-                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-infigo-500" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-indigo-400" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular">
+                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-indigo-400" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
                             <div class="hs-dropdown relative inline-flex [--placement:top-left]">
-                                <button class="bg-indigo-100 inline-flex items-center justify-center h-[2.875rem] w-[2.875rem] rounded-full  shadow-sm align-middle hover:bg-teal-100 text-sm dark:text-black  active:scale-110 duration-300">
+                                <button class="ring-2 ring-indigo-400 bg-indigo-100 inline-flex items-center justify-center h-[2.875rem] w-[2.875rem] rounded-full  shadow-sm align-middle hover:bg-blue-100 text-sm dark:text-black  active:scale-110 duration-300">
                                     <span class="leading-none"> + </span>
                                 </button>
 
@@ -146,9 +150,9 @@
 
 
                         <div class="flex-grow" onclick="scrolltoElement('skills')">
-                            <h2 class="text-indigo-500 text-lg title-font font-medium mb-3">Skills</h2>
+                            <h2 class="text-indigo-400 text-lg title-font font-medium mb-3">Skills</h2>
                             <p class="leading-relaxed text-sm">Programming languages and frameworks.</p>
-                            <a class="mt-3 text-indigo-300 inline-flex items-center">
+                            <a class="mt-3 text-indigo-400 inline-flex items-center">
                                 See More
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -156,8 +160,8 @@
                             </a>
                         </div>
                     </div>
-                    <div class="border-2 rounded-lg p-6 hover:bg-teal-100 hover:-translate-y-3 duration-300 cursor-pointer hover:text-gray-800 active:scale-105">
-                        <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+                    <div class="border-2 border-indigo-400 rounded-lg p-6 hover:bg-blue-100 hover:-translate-y-3 duration-300 cursor-pointer hover:text-gray-800 active:scale-105">
+                        <div class="w-12 h-12 inline-flex items-center justify-center rounded-full ring-2 ring-indigo-400 bg-indigo-100 text-indigo-400 mb-5">
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
                                 <circle cx="12" cy="3" r="1" />
                                 <path d="M16 21L12 13M12 13V7M12 13L8 21M12 7L18 9M12 7L6 9" />
@@ -166,7 +170,7 @@
                         <div class="flex-grow">
                             <h2 class="text-indigo-500 text-lg title-font font-medium mb-3">My Bio</h2>
                             <p class="leading-relaxed text-sm">See my journey through coding in an animated timeline.<br /></p>
-                            <a class="mt-3 text-indigo-300 inline-flex items-center">
+                            <a class="mt-3 text-indigo-400 inline-flex items-center">
                                 Coming soon...
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -200,7 +204,7 @@
             <div class="tab-content transition-opacity duration-500 ease-in-out hidden" id="tab1">
                 <p class="flex text-left leading-relaxed mx-auto mb-10">
                     <a href="http://www.ofro.com.tr" target="_blank" class="mt-2">
-                        <img class="bg-indigo-100 mr-3 inline-block h-[2.875rem] w-[3.4rem] rounded-full ring-2 ring-white" src="/img/ofro.jpg" alt="Ofro">
+                        <img class="bg-indigo-100 mr-3 inline-block h-[2.875rem] w-[3.4rem] rounded-full ring-2 ring-indigo-400" src="/img/ofro.jpg" alt="Ofro">
                         <span class="mt-2"> ofro.com.tr</span>
                     </a>
                 </p>
@@ -443,7 +447,7 @@
                 <tbody class="text-center">
                     <tr>
                         <td class="px-4 py-3 text-left">
-                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-indigo-400" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
                             <br />HTML
                         </td>
                         <td class="px-4 py-3 text-left">20 +</td>
@@ -453,7 +457,7 @@
                     </tr>
                     <tr>
                         <td class="px-4 py-3 text-left">
-                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white"
+                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-indigo-400"
                                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Javascript">
                             <br />Javascript
                         </td>
@@ -465,7 +469,7 @@
 
                     <tr>
                         <td class="px-4 py-3 text-left">
-                            <img class="bg-indigo-100 mb-1 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white"
+                            <img class="bg-indigo-100 mb-1 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-indigo-400"
                                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
                             <br />CSS
                         </td>
@@ -476,7 +480,7 @@
                     </tr>
                     <tr>
                         <td class="px-4 py-3 text-left">
-                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white"
+                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-indigo-400"
                                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
                             <br />Bootstrap
                         </td>
@@ -487,7 +491,7 @@
                     </tr>
                     <tr>
                         <td class="px-4 py-3 text-left">
-                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white"
+                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-indigo-400"
                                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt="TailwindCSS">
                             <br />Tailwind CSS
                         </td>
@@ -500,7 +504,7 @@
 
                     <tr>
                         <td class="px-4 py-3 text-left">
-                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-indigo-400" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
                             <br />Python
                         </td>
                         <td class="px-4 py-3 text-left">6 +</td>
@@ -511,7 +515,7 @@
                     </tr>
                     <tr>
                         <td class="px-4 py-3 text-left">
-                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular">
+                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-indigo-400" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular">
                             <br />Angular
                         </td>
                         <td class="px-4 py-3 text-left">2 +</td>
@@ -521,7 +525,7 @@
                     </tr>
                     <tr>
                         <td class="px-4 py-3 text-left">
-                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white"
+                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-indigo-400"
                                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" alt="Dot-Net-Core">
                             <br />.NET Core
                         </td>
@@ -533,7 +537,7 @@
 
                     <tr>
                         <td class="px-4 py-3 text-left">
-                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-indigo-400" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
                             <br />MongoDB
                         </td>
                         <td class="px-4 py-3 text-left">1 +</td>
@@ -543,7 +547,7 @@
                     </tr>
                     <tr>
                         <td class="px-4 py-3 text-left">
-                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white"
+                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-indigo-400"
                                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="MSSQL">
                             <br />MSSQL
                         </td>
@@ -554,7 +558,7 @@
                     </tr>
                     <tr>
                         <td class="px-4 py-3 text-left">
-                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white"
+                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-indigo-400"
                                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
                             <br />MySQL
                         </td>
@@ -565,7 +569,7 @@
                     </tr>
                     <tr>
                         <td class="px-4 py-3 text-left">
-                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white"
+                            <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-indigo-400"
                                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
                             <br />Postgresql
                         </td>
@@ -596,7 +600,7 @@
                             <input type="text" id="footer-field" name="message" class="w-full bg-gray-100 dark:bg-slate-200 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                         </div>
 
-                        <button id="my-form-button" class="relative mt-3 mr-4 md:mt-0 md:inline-flex w-full md:w-40 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Contact Me</button>
+                        <button id="my-form-button" class="relative mt-3 mr-4 md:mt-0 md:inline-flex w-full md:w-40 text-white bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Contact Me</button>
                         <p id="my-form-status"></p>
                         <p class="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 text-center dark:text-slate-200">
                             or send an email to:
