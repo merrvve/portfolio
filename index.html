@@ -58,12 +58,12 @@
 
                 <div id="dropdown-menu" class="hidden absolute right-0 active:animate-ping  z-10 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 ">
                     <ul class="py-2 text-sm text-gray-700 dark:text-gray-200">
-                        <li>
-                            <a href="#" class="cursor-pointer block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Home</a>
-                        </li>
-                        <li>
-                            <a class="cursor-pointer block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bio</a>
-                        </li>
+                        <!-- <li> -->
+                            <!-- <a href="#" class="cursor-pointer block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Home</a> -->
+                        <!-- </li> -->
+                        <!-- <li> -->
+                            <!-- <a class="cursor-pointer block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bio</a> -->
+                        <!-- </li> -->
                         <li>
                             <a onclick="scrolltoElement('projects')" class="cursor-pointer block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Projects</a>
                         </li>
@@ -86,15 +86,15 @@
 
     <section class="text-slate-900 dark:bg-gray-800 dark:text-slate-200 body-font p-3">
 
-        <div class="container px-36 py-4 mx-auto flex flex-wrap">
-            <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg py-4">
+        <div class="container md:px-36 md:py-4 mx-auto flex flex-wrap">
+            <div class="lg:w-1/2 w-screen mb-10 lg:mb-0 rounded-lg py-4">
                 <div class="flex flex-col justify-between h-full">
                     <div>
-                        <h1 class="text-7xl font-extrabold leading-lose py-24">Full Stack Developer <br /></h1>
-                        <h3 class="leading-10">Merve Keskin. <br />Based in Istanbul.</h3>
+                        <h1 class="md:text-7xl text-5xl px-2 md:py-24 font-extrabold leading-lose pt-36">Full Stack Developer <br /></h1>
+                        <h3 class="leading-10 pt-4">Merve Keskin. <br />Based in Istanbul.</h3>
                     </div>
-                    <div class="flex justify-end mb-10">
-                        <button onclick="scrolltoElement('footer')" class="text-white bg-indigo-500 border-0 py-2 px-8 hover:scale-105 focus:bg-indigo-800 duration-300 rounded text-lg">Contact Me</button>
+                    <div class="flex justify-end mb-5 pt-10 ">
+                        <button onclick="scrolltoElement('footer')" class="w-full mr-2 md:w-auto text-white bg-indigo-500 border-0 py-2 px-8 hover:scale-105 focus:bg-indigo-800 duration-300 rounded text-lg">Contact Me</button>
                     </div>
                 </div>
             </div>
@@ -102,9 +102,9 @@
             <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
                 <div onclick="scrolltoElement('projects')" id="projectsMenu" class="flex flex-col mb-5 lg:items-start items-center border-2 rounded-lg p-6 hover:bg-teal-100 hover:-translate-y-3 duration-300 cursor-pointer hover:text-gray-800 active:scale-105">
                     <div class="flex -space-x-2 mb-5">
-                        <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="img/ofro.jpg" alt="Ofro">
-                        <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="img/marsev.jpg" alt="Marsev">
-                        <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="img/presentai-logo.jpg" alt="PresentAI">
+                        <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="portfolio/img/ofro.jpg" alt="Ofro">
+                        <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="portfolio/img/marsev.jpg" alt="Marsev">
+                        <img class="bg-indigo-100 mb-1 inline-block h-[2.875rem] w-[2.875rem] rounded-full ring-2 ring-white" src="portfolio/img/presentai-logo.jpg" alt="PresentAI">
                         <div class="hs-dropdown relative inline-flex [--placement:top-left]">
                             <button class="bg-indigo-100 inline-flex items-center justify-center h-[2.875rem] w-[2.875rem] rounded-full  shadow-sm align-middle hover:bg-teal-100 text-sm dark:text-black  active:scale-110 duration-300">
                                 <span class="leading-none"> + </span>
@@ -186,14 +186,14 @@
             <div class="text-center mb-4">
                 <h1 class="sm:text-3xl text-2xl font-extrabold text-center mb-4">Recent Projects</h1>
             </div>
-            <div class="inline-flex rounded-lg shadow-sm mb-6">
-                <button id="tabBtn1" type="button" class="selected tab-button py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 hover:text-black disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+            <div class="inline-flex rounded-lg shadow-sm mb-6 text-left">
+                <button id="tabBtn1" type="button" class="selected tab-button py-3 md:px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 hover:text-black disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
                     Ofro
                 </button>
-                <button id="tabBtn2" type="button" class="tab-button py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                <button id="tabBtn2" type="button" class="tab-button py-3 md:px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
                     Marsev
                 </button>
-                <button id="tabBtn3" type="button" class="tab-button py-3 px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                <button id="tabBtn3" type="button" class="tab-button py-3 md:px-4 inline-flex items-center gap-x-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
                     PresentAI
                 </button>
             </div>
@@ -208,9 +208,9 @@
                     Ofro is an online financial feasibility report genarator tool. It is not just a CRUD web application, but generates reports with graphics based on user inputs.
                 </p>
                 <div class="flex flex-wrap -m-4 text-sm">
-                    <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
+                    <div class="p-4 lg:w-1/4 sm:w-1/2 w-full text-left">
                         <h2 class="font-medium title-font tracking-widest mb-4  text-center sm:text-left">TECHSTACK</h2>
-                        <nav class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
+                        <nav class="flex flex-col items-start text-left text-left  -mb-1 space-y-2.5">
                             <a>
                                 <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
@@ -278,7 +278,7 @@
                     </div>
                     <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
                         <h2 class="font-medium title-font tracking-widest mb-4 text-sm text-center sm:text-left">FEATURES</h2>
-                        <nav class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
+                        <nav class="flex flex-col items-start text-left -mb-1 space-y-2.5">
                             <a>
                                 <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
@@ -339,7 +339,7 @@
                     </div>
                     <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
                         <h2 class="font-medium title-font tracking-widest  mb-4 text-sm text-center sm:text-left">HOSTING AND DEPLOY</h2>
-                        <nav class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
+                        <nav class="flex flex-col items-start text-left -mb-1 space-y-2.5">
                             <a>
                                 <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
@@ -373,7 +373,7 @@
                     </div>
                     <div class="p-4 lg:w-1/4 sm:w-1/2 w-full">
                         <h2 class="font-medium title-font tracking-widest  mb-4 text-sm text-center sm:text-left">CHALLENGES</h2>
-                        <nav class="flex flex-col sm:items-start sm:text-left text-center items-center -mb-1 space-y-2.5">
+                        <nav class="flex flex-col items-start text-left -mb-1 space-y-2.5">
                             <a>
                                 <span class="bg-indigo-100 text-indigo-500 w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
                                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
@@ -421,7 +421,7 @@
             <div class="tab-content transition-opacity duration-500 ease-in-out hidden" id="tab3">
                 3
             </div>
-            
+
 
         </div>
     </section>
@@ -581,24 +581,30 @@
         </div>
     </section>
 
-    <footer class="text-gray-600 body-font" id="footer">
-        <div class="border-t border-gray-200">
+    <footer class="text-gray-600 dark:bg-gray-800 dark:text-white body-font" id="footer">
+        <div class="border-t border-gray-200 dark:border-gray-500">
             <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
-                <div class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
-                    <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
-                        <label for="footer-field" class="leading-7 text-sm text-gray-600">E-mail:</label>
-                        <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                    </div>
-                    <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
-                        <label for="footer-field" class="leading-7 text-sm text-gray-600">Message</label>
-                        <input id="footer-field" name="footer-field" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                    </div>
+                <div>
+                    <!-- modify this form HTML and place wherever you want your form -->
+                    <form id="my-form" action="https://formspree.io/f/xoqozpqj" method="POST" class="flex md:flex-nowrap flex-wrap items-end md:justify-start">
+                        <div class="relative w-full md:w-40 mr-4 md:mr-2">
+                            <label for="footer-field" class="leading-7 text-sm text-gray-600 dark:text-white">E-mail:</label>
+                            <input type="email" id="footer-field" name="email" class="w-full bg-gray-100 dark:bg-slate-200 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
+                        <div class="relative w-full md:w-40 mr-4 md:mr-2">
+                            <label for="footer-field" class="leading-7 text-sm text-gray-600 dark:text-white">Message</label>
+                            <input type="text" id="footer-field" name="message" class="w-full bg-gray-100 dark:bg-slate-200 bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:bg-transparent focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        </div>
 
-                    <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Contact Me</button>
-                    <p class="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 sm:text-left text-center">
-                        or send an email to:
-                        <br class="lg:block hidden"><a href="mailto:mervsen@gmail.com">mervsen@gmail.com</a>
-                    </p>
+                        <button id="my-form-button" class="relative mt-3 mr-4 md:mt-0 md:inline-flex w-full md:w-40 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Contact Me</button>
+                        <p id="my-form-status"></p>
+                        <p class="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 text-center dark:text-slate-200">
+                            or send an email to:
+                            <br class="lg:block hidden"><a href="mailto:mervsen@gmail.com">mervsen@gmail.com</a>
+                        </p>
+
+                    </form>
+
                 </div>
                 <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
                     <a class="text-gray-500">
@@ -626,14 +632,14 @@
                 </span>
             </div>
         </div>
-        <div class="bg-gray-100">
+        <div class="bg-gray-100 dark:bg-gray-300">
             <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
                 <p class="text-gray-500 text-sm text-center sm:text-left">
                     © 2023 M. Keskin
                 </p>
                 <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-500 text-sm">
                     Special thanks to     <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" target="_blank" rel="noopener noreferrer">@knyttneve</a>
-                for the <a href="http://www.tailblocks.cc">Tailblocks.cc</a>
+                    for the <a href="http://www.tailblocks.cc">Tailblocks.cc</a>
                 </span>
             </div>
         </div>
@@ -696,9 +702,9 @@
             const dropdownContainer = document.getElementById('dropdown-container');
 
             // Toggle on click
-            toggleButton.addEventListener('click', function () {
-                dropdownMenu.classList.toggle('hidden');
-            });
+            //toggleButton.addEventListener('click', function () {
+            //    dropdownMenu.classList.toggle('hidden');
+            //});
 
             // Open on hover
             dropdownContainer.addEventListener('mouseover', function () {
@@ -753,9 +759,43 @@
                 setTimeout(() => activeTab.style.opacity = '1', 50);
             }, 200);
         }
-      
+
         showTab(1);
 
+    </script>
+    
+    <!-- Place this script at the end of the body tag -->
+    <script>
+        var form = document.getElementById("my-form");
+
+        async function handleSubmit(event) {
+            event.preventDefault();
+            var status = document.getElementById("my-form-status");
+            var data = new FormData(event.target);
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    status.innerHTML = "Thanks for your submission!";
+                    form.reset()
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                        } else {
+                            status.innerHTML = "Oops! There was a problem submitting your form"
+                        }
+                    })
+                }
+            }).catch(error => {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+            });
+        }
+        form.addEventListener("submit", handleSubmit)
     </script>
 </body>
 </html>
